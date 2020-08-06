@@ -6,13 +6,10 @@ import {
   Row,
   Col,
   Jumbotron,
-  Button,
   Card,
   CardHeader,
-  CardImg,
   CardText,
   CardBody,
-  CardTitle,
   CardSubtitle,
 } from "reactstrap";
 
@@ -80,7 +77,11 @@ class Main extends React.Component {
               <hr className='my-2' />
               <p>
                 Data pulled from the{" "}
-                <a target='_blank' href='https://swapi.dev/documentation'>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://swapi.dev/documentation'
+                >
                   SWAPI (Star Wars API)
                 </a>
               </p>
@@ -90,7 +91,7 @@ class Main extends React.Component {
             <Row>
               {items.map((item) => (
                 <Col md='4'>
-                  <Card>
+                  <Card className='m-2'>
                     <CardHeader>
                       <h3>{item.title}</h3>
                     </CardHeader>

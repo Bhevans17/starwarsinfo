@@ -17,41 +17,41 @@ const Navigation = (props) => {
 
   return (
     <Fragment>
-      <Navbar expand='md'>
+      <Navbar color='dark' dark expand='md'>
         <Container>
-          <NavbarBrand className='text-dark' href='/'>
+          <NavbarBrand className='text-white' href='/'>
             <i class='fab fa-galactic-republic'></i> Star Wars Info
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem className='p-3'>
-                <NavLink tag={Link} to='/'>
+                <NavLink className='text-white' tag={Link} to='/'>
                   Home
                 </NavLink>
               </NavItem>
               <NavItem className='p-3'>
-                <NavLink tag={Link} to='/people'>
+                <NavLink className='text-white' tag={Link} to='/people'>
                   People
                 </NavLink>
               </NavItem>
               <NavItem className='p-3'>
-                <NavLink tag={Link} to='/planets'>
+                <NavLink className='text-white' tag={Link} to='/planets'>
                   Planets
                 </NavLink>
               </NavItem>
               <NavItem className='p-3'>
-                <NavLink tag={Link} to='/species'>
+                <NavLink className='text-white' tag={Link} to='/species'>
                   Species
                 </NavLink>
               </NavItem>
               <NavItem className='p-3'>
-                <NavLink tag={Link} to='/starships'>
+                <NavLink className='text-white' tag={Link} to='/starships'>
                   Starships
                 </NavLink>
               </NavItem>
               <NavItem className='p-3'>
-                <NavLink tag={Link} to='/vehicles'>
+                <NavLink className='text-white' tag={Link} to='/vehicles'>
                   Vehicles
                 </NavLink>
               </NavItem>

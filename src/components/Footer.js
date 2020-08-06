@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, NavItem, NavLink } from "reactstrap";
+import { Container, Nav, NavLink } from "reactstrap";
 
 class Footer extends React.Component {
   render() {

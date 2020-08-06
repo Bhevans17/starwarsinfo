@@ -1,14 +1,11 @@
 import React, { Fragment } from "react";
 import {
   Jumbotron,
-  Button,
   Container,
   Row,
   Col,
   Spinner,
   Card,
-  CardImg,
-  CardText,
   CardBody,
   CardSubtitle,
 } from "reactstrap";

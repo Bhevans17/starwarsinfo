@@ -1,14 +1,11 @@
 import React, { Fragment } from "react";
 import {
   Jumbotron,
-  Button,
   Container,
   Row,
   Col,
   Spinner,
   Card,
-  CardImg,
-  CardText,
   CardBody,
   CardSubtitle,
 } from "reactstrap";
@@ -83,7 +80,7 @@ class Species extends React.Component {
             <Row>
               {items.map((item) => (
                 <Col md='4'>
-                  <Card>
+                  <Card className='m-1'>
                     <CardBody>
                       <h3 className='mb-3'>{item.name}</h3>
                       <CardSubtitle className='mb-1'>
