@@ -13,11 +13,11 @@ import {
   CardSubtitle,
 } from "reactstrap";
 
-import Background from "../img/people.jpg";
+import Background from "../img/mando.jpg";
 
 const jumbotronStyles = {
-  width: "100%",
-  height: "100%",
+  width: "100vw",
+  height: "100vh",
   backgroundImage: `url(${Background})`,
   backgroundSize: "cover",
   backgroundPosition: "top",
@@ -75,16 +75,12 @@ class Main extends React.Component {
                 Information based around the Star Wars universe.
               </p>
               <hr className='my-2' />
-              <p>
-                Data pulled from the{" "}
-                <a
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  href='https://swapi.dev/documentation'
-                >
-                  SWAPI (Star Wars API)
-                </a>
-              </p>
+              <a className='btn btn-dark btn-lg mr-3' href='/planets'>
+                Explore Planets
+              </a>
+              <a className='btn btn-light btn-lg' href='/starships'>
+                Starships
+              </a>
             </Container>
           </Jumbotron>
           <Container>
